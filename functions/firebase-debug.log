@@ -1,0 +1,89 @@
+[debug] [2019-08-07T07:36:31.320Z] ----------------------------------------------------------------------
+[debug] [2019-08-07T07:36:31.321Z] Command:       /usr/local/Cellar/node/12.6.0/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-07T07:36:31.322Z] CLI Version:   7.2.2
+[debug] [2019-08-07T07:36:31.322Z] Platform:      darwin
+[debug] [2019-08-07T07:36:31.322Z] Node Version:  v12.6.0
+[debug] [2019-08-07T07:36:31.323Z] Time:          Wed Aug 07 2019 14:36:31 GMT+0700 (Indochina Time)
+[debug] [2019-08-07T07:36:31.323Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-07T07:36:31.329Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-07T07:36:31.329Z] > authorizing via signed-in user
+[debug] [2019-08-07T07:36:31.329Z] [iam] checking project jop-test-baseflow-staging for permissions ["firebase.projects.get"]
+[debug] [2019-08-07T07:36:31.331Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-07T07:36:31.331Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-07T07:36:31.549Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-07T07:36:31.559Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jop-test-baseflow-staging:testIamPermissions  
+
+[debug] [2019-08-07T07:36:32.703Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-07T07:36:32.704Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/jop-test-baseflow-staging  
+ 
+[debug] [2019-08-07T07:36:33.113Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/jopmiddelkamp/Projects/Test/firebase-test-app'...
+[info] 
+[debug] [2019-08-07T07:36:33.116Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/jop-test-baseflow-staging/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-08-07T07:36:33.129Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/jop-test-baseflow-staging/adminSdkConfig  
+ 
+[debug] [2019-08-07T07:36:33.931Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-07T07:36:33.936Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist/browser
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions" for Cloud Functions...
+[debug] [2019-08-07T07:36:34.358Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions","node_version":"12.6.0"}
+[debug] [2019-08-07T07:36:34.358Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-07T07:36:34.359Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T07:36:34.360Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T07:36:34.360Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[ssr]: http function initialized (http://localhost:5001/jop-test-baseflow-staging/us-central1/ssr).
+[info] [hosting] Rewriting / to http://localhost:5001/jop-test-baseflow-staging/us-central1/ssr for local Function ssr
+[debug] [2019-08-07T07:36:46.644Z] Accepted request GET /jop-test-baseflow-staging/us-central1/ssr/ --> ssr
+[debug] [2019-08-07T07:36:46.876Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "ssr"
+[debug] [2019-08-07T07:36:46.876Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-07T07:36:46.878Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T07:36:46.880Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T07:36:46.880Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T07:36:47.273Z] [runtime-status] Trigger "ssr" has been found, beginning invocation! {}
+[debug] [2019-08-07T07:36:47.273Z] [runtime-status]  {"httpsTrigger":{},"name":"ssr","entryPoint":"ssr"}
+[debug] [2019-08-07T07:36:47.273Z] [runtime-status] Running ssr in mode HTTPS {}
+[debug] [2019-08-07T07:36:47.281Z] {"socketPath":"/var/folders/fv/1z2h111952q_qq_522m1jyr40000gn/T/firebase_emulator_invocation_5290.sock"}
+[debug] [2019-08-07T07:36:47.283Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/fv/1z2h111952q_qq_522m1jyr40000gn/T/firebase_emulator_invocation_5290.sock"}
+[debug] [2019-08-07T07:36:47.291Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-07T07:36:47.319Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "ssr" in ~1s
+[info] [hosting] Rewriting /test to http://localhost:5001/jop-test-baseflow-staging/us-central1/ssr for local Function ssr
+[debug] [2019-08-07T07:36:52.368Z] Accepted request GET /jop-test-baseflow-staging/us-central1/ssr/test --> ssr
+[debug] [2019-08-07T07:36:52.563Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "ssr"
+[debug] [2019-08-07T07:36:52.563Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-07T07:36:52.564Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T07:36:52.565Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T07:36:52.565Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T07:36:52.899Z] [runtime-status] Trigger "ssr" has been found, beginning invocation! {}
+[debug] [2019-08-07T07:36:52.899Z] [runtime-status]  {"httpsTrigger":{},"name":"ssr","entryPoint":"ssr"}
+[debug] [2019-08-07T07:36:52.899Z] [runtime-status] Running ssr in mode HTTPS {}
+[debug] [2019-08-07T07:36:52.904Z] {"socketPath":"/var/folders/fv/1z2h111952q_qq_522m1jyr40000gn/T/firebase_emulator_invocation_5291.sock"}
+[debug] [2019-08-07T07:36:52.905Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/fv/1z2h111952q_qq_522m1jyr40000gn/T/firebase_emulator_invocation_5291.sock"}
+[debug] [2019-08-07T07:36:52.909Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-07T07:36:52.931Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "ssr" in ~1s
+[info] [hosting] Rewriting / to http://localhost:5001/jop-test-baseflow-staging/us-central1/ssr for local Function ssr
+[debug] [2019-08-07T07:37:03.447Z] Accepted request GET /jop-test-baseflow-staging/us-central1/ssr/ --> ssr
+[debug] [2019-08-07T07:37:03.633Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "ssr"
+[debug] [2019-08-07T07:37:03.633Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-07T07:37:03.635Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T07:37:03.635Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T07:37:03.636Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jopmiddelkamp/Projects/Test/firebase-test-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T07:37:03.960Z] [runtime-status] Trigger "ssr" has been found, beginning invocation! {}
+[debug] [2019-08-07T07:37:03.961Z] [runtime-status]  {"httpsTrigger":{},"name":"ssr","entryPoint":"ssr"}
+[debug] [2019-08-07T07:37:03.961Z] [runtime-status] Running ssr in mode HTTPS {}
+[debug] [2019-08-07T07:37:03.966Z] {"socketPath":"/var/folders/fv/1z2h111952q_qq_522m1jyr40000gn/T/firebase_emulator_invocation_5294.sock"}
+[debug] [2019-08-07T07:37:03.966Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/fv/1z2h111952q_qq_522m1jyr40000gn/T/firebase_emulator_invocation_5294.sock"}
+[debug] [2019-08-07T07:37:03.971Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-07T07:37:03.990Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "ssr" in ~1s
